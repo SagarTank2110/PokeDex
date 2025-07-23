@@ -1,14 +1,16 @@
-import {View, Text} from 'react-native';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import PokemonStack from './PokemonStack';
 import {Provider} from 'react-redux';
+import PokemonStack from './PokemonStack';
+import store from '../store/configureStore';
 
 const AppNavigator = () => {
   return (
-    <NavigationContainer>
-      <PokemonStack />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <PokemonStack />
+      </NavigationContainer>
+    </Provider>
   );
 };
 
