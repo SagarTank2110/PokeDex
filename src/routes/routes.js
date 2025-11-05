@@ -3,4 +3,5 @@ export default Object.freeze({
   POKEMONDETAILS: 'Pokemon Details',
   POKEMONLISTITEM: 'Pokemon List',
   POKEMONTYPES: 'Pokemon Types',
+  TEXTINPUTSCREEN: 'Text Input Screen',
 });

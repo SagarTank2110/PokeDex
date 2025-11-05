@@ -10,6 +10,10 @@ const PokemonStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
+        name={routes.TEXTINPUTSCREEN}
+        component={Screens.TextInputScreen}
+      />
+      <Stack.Screen
         name={routes.POKEMONTYPES}
         component={Screens.PokemonTypes}
       />
